@@ -7,84 +7,112 @@ import {
 } from "@bot-whatsapp/bot";
 import { BaileysProvider, handleCtx } from "@bot-whatsapp/provider-baileys";
 
+// URLs de servicios
+const URL_DEUDA =
+  "http://10.16.2.99:8080/CorpoelecRest/rest/OficinaService/SaldoDetalle";
+const URL_CATASTRO = "http://10.200.10.249:3002/api/getUsuarioCatastro";
+
+// Flujo de bienvenida
 const flowBienvenida = addKeyword("hola").addAnswer(
-  "¡Bienvenido(a) Administradora Serdeco C.A., Estamos aca para ayudarle con la gestión y pagos de tus servicios de Aseo urbano y Relleno Sanitario Escribe *Menu* para ver las opciones disponibles."
+  "👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\nEstamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n\nEscribe *menu* para ver las opciones disponibles."
 );
 
-const flowMenu = addKeyword(["hola", "menu"]).addAnswer([
+// Menú principal
+const flowMenu = addKeyword(["menu", "hola"]).addAnswer([
   "¿Qué deseas hacer?",
   "1️⃣ Ver Deuda",
   "2️⃣ Consultar mi Cuenta Contrato",
 ]);
 
+// Consulta de deuda
 const flowOpcion1 = addKeyword("1")
-  .addAnswer("Ingresa tu número de cuenta contrato de 12 dígitos", {
+  .addAnswer("🔢 Ingresa tu número de cuenta contrato (12 dígitos):", {
     capture: true,
   })
   .addAction(async (ctx, { flowDynamic }) => {
-    const cuentaContrato = ctx.body;
+    const cuentaContrato = ctx.body.trim();
 
-    const respuesta = await fetch(
-      `http://10.16.2.99:8080/CorpoelecRest/rest/OficinaService/SaldoDetalle/${cuentaContrato}`
-    );
-    const datos = await respuesta.json();
+    if (!/^\d{12}$/.test(cuentaContrato)) {
+      return await flowDynamic(
+        "⚠️ El número ingresado no es válido. Debe tener 12 dígitos."
+      );
+    }
 
-    const deudaAseo = Number(datos.deudaAseoTotal) || 0;
-    const deudaRelleno = Number(datos.deudaRellenoTotal) || 0;
-    const total = deudaAseo + deudaRelleno;
+    try {
+      const res = await fetch(`${URL_DEUDA}/${cuentaContrato}`);
+      const datos = await res.json();
 
-    await flowDynamic(
-      `📄 La deuda presente para la cuenta contrato *${cuentaContrato}*:\nAseo Urbano: *${deudaAseo}*\n Relleno Sanitario: *${deudaRelleno}*\n Total a pagar: *${total}*`
-    );
+      const deudaAseo = Number(datos.deudaAseoTotal) || 0;
+      const deudaRelleno = Number(datos.deudaRellenoTotal) || 0;
+      const total = deudaAseo + deudaRelleno;
+
+      await flowDynamic(
+        `Deuda actual para la cuenta *${cuentaContrato}*:\n` +
+          ` Aseo Urbano: *${deudaAseo.toFixed(2)} Bs*\n` +
+          ` Relleno Sanitario: *${deudaRelleno.toFixed(2)} Bs*\n` +
+          `Total a pagar: *${total.toFixed(2)} Bs*`
+      );
+    } catch (error) {
+      await flowDynamic(
+        "❌ Ocurrió un error al consultar la deuda. Intenta nuevamente más tarde."
+      );
+    }
   });
 
 const flowOpcion2 = addKeyword("2")
-  .addAnswer("Ingresa tu número de cedula", {
-    capture: true,
-  })
+  .addAnswer("🆔 Ingresa tu número de cédula:", { capture: true })
   .addAction(async (ctx, { flowDynamic }) => {
-    const cedula = ctx.body;
+    const cedula = ctx.body.trim();
 
-    const respuesta = await fetch(
-      `http://10.200.10.249:3002/api/getUsuarioCatastro`,
-      {
+    if (!/^\d+$/.test(cedula)) {
+      return await flowDynamic("⚠️ La cédula ingresada no es válida.");
+    }
+
+    try {
+      const res = await fetch(URL_CATASTRO, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cedula),
-      }
-    );
-    const datos = await respuesta.json();
+      });
+      const datos = await res.json();
 
-    await flowDynamic(
-      `Las cuentas contrato asociadas a la cédula *${cedula}* son:\n${datos
-        .map((dato) => `- ${dato.cuentaContrato}`)
-        .join("\n")}`
-    );
+      if (!datos.length) {
+        return await flowDynamic(
+          `🔎 No se encontraron cuentas asociadas a la cédula *${cedula}*.`
+        );
+      }
+
+      const cuentas = datos.map((d) => `🔹 ${d.cuentaContrato}`).join("\n");
+      await flowDynamic(
+        `📑 Cuentas asociadas a la cédula *${cedula}*:\n${cuentas}`
+      );
+    } catch (error) {
+      await flowDynamic(
+        "❌ Error al consultar las cuentas. Por favor, intenta más tarde."
+      );
+    }
   });
 
-/**
- *
- */
+// Inicialización del bot
 const main = async () => {
   const provider = createProvider(BaileysProvider);
-
   provider.initHttpServer(3002);
 
+  // Endpoint para enviar mensajes desde el servidor
   provider.http.server.post(
     "/send-message",
     handleCtx(async (bot, req, res) => {
-      const body = req.body;
-      //console.log(body)
+      const { message, mediaUrl } = req.body;
 
-      const message = body.message;
-      const mediaUrl = body.mediaUrl;
+      await bot.sendMessage(
+        process.env.FRIEND_NUMBER,
+        message || "Nuevo mensaje",
+        {
+          media: mediaUrl,
+        }
+      );
 
-      await bot.sendMessage(process.env.FRIEND_NUMBER, "mensaje¡", {
-        media: mediaUrl,
-      });
-      res.end("esto es del server de serdeco");
+      res.end("Mensaje enviado desde el servidor de Serdeco.");
     })
   );
 
@@ -96,24 +124,3 @@ const main = async () => {
 };
 
 main();
-/*
-import { createBot, createFlow, MemoryDB, addKeyword, createProvider } from '@bot-whatsapp/bot';
-import { BaileysProvider } from '@bot-whatsapp/provider-baileys';
-
-const flowBienvenida = addKeyword('hola').addAnswer('¡Bienvenido!');
-
-const main = async () => {
-  const provider = createProvider(BaileysProvider);
-
-  const bot = await createBot({
-    flow: createFlow([flowBienvenida]),
-    database: new MemoryDB(),
-    provider,
-  });
-
- await provider.sendMessage('+584168325363','Hola desde el bot configurado!');
-
-};
-
-
-main();*/
