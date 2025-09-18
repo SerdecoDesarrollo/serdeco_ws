@@ -9,11 +9,14 @@ import { BaileysProvider, handleCtx } from "@bot-whatsapp/provider-baileys";
 
 // Flujo de bienvenida
 const flowBienvenida = addKeyword(["hola", "Buenas"]).addAnswer(
-  "👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\nEstamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\nEscribe *Menu* para ver las opciones disponibles."
+  "👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\nEstamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\nEscribe *Menu* para ver las opciones disponibles.",
+  {
+    capture: true,
+  }
 );
 
 //  Flujo de menú principal
-const flowMenu = addKeyword(["menu"]).addAnswer([
+const flowMenu = addKeyword(["menu", "Menu"]).addAnswer([
   "¿Qué deseas hacer?",
   "1️⃣ Ver Deuda",
   "2️⃣ Consultar mi Cuenta Contrato",
@@ -78,7 +81,14 @@ const flowOpcion1 = addKeyword("1")
         "❌ No se pudo consultar la deuda en este momento. Intenta nuevamente más tarde."
       );
     }
-  });
+  })
+  .addAnswer(
+    "✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.",
+    null,
+    (ctx, { endFlow }) => {
+      return endFlow();
+    }
+  );
 
 // Flujo para consultar cuentas contrato por cédula
 const flowOpcion2 = addKeyword("2")
@@ -141,7 +151,14 @@ const flowOpcion2 = addKeyword("2")
         "❌ No se pudo realizar la consulta en este momento. Intenta nuevamente más tarde."
       );
     }
-  });
+  })
+  .addAnswer(
+    "✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.",
+    null,
+    (ctx, { endFlow }) => {
+      return endFlow();
+    }
+  );
 
 // Inicialización del bot
 const main = async () => {
@@ -162,10 +179,26 @@ const main = async () => {
   );
 
   await createBot({
-    flow: createFlow([flowBienvenida, flowMenu, flowOpcion1, flowOpcion2]),
+    flow: createFlow([
+      flowBienvenida,
+      flowFinConversacion,
+      flowMenu,
+      flowOpcion1,
+      flowOpcion2,
+      flowFinConversacion,
+    ]),
     database: new MemoryDB(),
     provider,
   });
 };
+
+//  Flujo de salida
+const flowFinConversacion = addKeyword(["salir", "finalizar"]).addAnswer(
+  "✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.",
+  null,
+  (ctx, { endFlow }) => {
+    return endFlow();
+  }
+);
 
 main();

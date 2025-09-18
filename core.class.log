@@ -1,11 +1,307 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '584129579516@s.whatsapp.net',
+    remoteJid: '584122888355@s.whatsapp.net',
     fromMe: false,
-    id: 'ACE92C718389AFE4EDCCBFD55AE7E1A2',
+    id: 'ACB5F542A7132608CA56235C5D57ADD1',
     participant: undefined
   },
-  messageTimestamp: 1758050429,
+  messageTimestamp: 1758205498,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b36c194b-49d5-4f68-9011-df101bfd6abc',
+  keyword: 'key_69d271f6-4312-4260-8741-3d981548b32e',
+  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
+    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
+    'Escribe *Menu* para ver las opciones disponibles.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'efa9fd62e3b568165087303806bb8aa4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584122888355@s.whatsapp.net',
+    fromMe: false,
+    id: 'ACB93C9C04A41B0C0C150D1C0BBE6361',
+    participant: undefined
+  },
+  messageTimestamp: 1758205501,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menu',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Menu',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ccf2b63b-6081-4dec-944c-fcd005bea01f',
+  keyword: 'key_aace13ee-2698-4d67-95e7-db2ca107762a',
+  answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8315a4020794d232db9ba5d7d304c3f2'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584122888355@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC0371A38EBEA795D045B7E04BA937FE',
+    participant: undefined
+  },
+  messageTimestamp: 1758205504,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  keyword: 'key_a3c004b7-ed44-4101-ac6c-d957558e36f7',
+  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '9837a170adcbe1ce25bdfd1745653151'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584122888355@s.whatsapp.net',
+    fromMe: false,
+    id: 'ACE9FBB140701B51E3240ACC567D0A5F',
+    participant: undefined
+  },
+  messageTimestamp: 1758205511,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: '10004567890',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '10004567890',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  keyword: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fd07934617105193eda0687daebfd759'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9efe4d99-815a-4154-8f06-d8fa11ccc1e8',
+  keyword: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  answer: '✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd3ae2e5bc212c0ee7ed167273bcecf56'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584122888355@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC6F909D5FA458AD8CA4D94E4313CB85',
+    participant: undefined
+  },
+  messageTimestamp: 1758205525,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b36c194b-49d5-4f68-9011-df101bfd6abc',
+  keyword: 'key_69d271f6-4312-4260-8741-3d981548b32e',
+  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
+    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
+    'Escribe *Menu* para ver las opciones disponibles.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'efa9fd62e3b568165087303806bb8aa4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584122888355@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC2D10C148367916ADB8DEF856EC427A',
+    participant: undefined
+  },
+  messageTimestamp: 1758205528,
+  pushName: 'Jhonny Moncada',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menu',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Menu',
+  name: 'Jhonny Moncada',
+  from: '584122888355'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ccf2b63b-6081-4dec-944c-fcd005bea01f',
+  keyword: 'key_aace13ee-2698-4d67-95e7-db2ca107762a',
+  answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8315a4020794d232db9ba5d7d304c3f2'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584129579516@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC70741674D59BEF2CF1B816A3CF43C2',
+    participant: undefined
+  },
+  messageTimestamp: 1758205593,
+  pushName: 'Genesisdel',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Genesisdel',
+  from: '584129579516'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b36c194b-49d5-4f68-9011-df101bfd6abc',
+  keyword: 'key_69d271f6-4312-4260-8741-3d981548b32e',
+  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
+    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
+    'Escribe *Menu* para ver las opciones disponibles.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'efa9fd62e3b568165087303806bb8aa4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584129579516@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC97ED6C8926166E746CB267EACC5C3B',
+    participant: undefined
+  },
+  messageTimestamp: 1758205595,
   pushName: 'Genesisdel',
   broadcast: false,
   message: Message {
@@ -21,8 +317,8 @@
   from: '584129579516'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9866adb2-6e6e-4ffc-a42f-42a1cd6fbac1',
-  keyword: 'key_07ff3e56-dc58-4f76-bd17-fcfe4190d689',
+  ref: 'ans_ccf2b63b-6081-4dec-944c-fcd005bea01f',
+  keyword: 'key_aace13ee-2698-4d67-95e7-db2ca107762a',
   answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
   options: {
     media: undefined,
@@ -35,16 +331,55 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c4241d40c44afec9527ead0b339e1eb3'
+  refSerialize: '8315a4020794d232db9ba5d7d304c3f2'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584168325363@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC846E1355477EE0EB9BA7B8C2E4A906',
+    participant: undefined
+  },
+  messageTimestamp: 1758205596,
+  pushName: 'jesuseacostaf',
+  broadcast: false,
+  message: Message {
+    conversation: 'Znfnf',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Znfnf',
+  name: 'jesuseacostaf',
+  from: '584168325363'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  keyword: 'key_a3c004b7-ed44-4101-ac6c-d957558e36f7',
+  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '9837a170adcbe1ce25bdfd1745653151'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '584129579516@s.whatsapp.net',
     fromMe: false,
-    id: 'AC7F9AD28CB5614E43DC2A6980B021C7',
+    id: 'ACA1024B891E5ABEA397A35C3575B1C7',
     participant: undefined
   },
-  messageTimestamp: 1758050431,
+  messageTimestamp: 1758205597,
   pushName: 'Genesisdel',
   broadcast: false,
   message: Message {
@@ -60,8 +395,8 @@
   from: '584129579516'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
+  ref: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  keyword: 'key_a3c004b7-ed44-4101-ac6c-d957558e36f7',
   answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
   options: {
     media: undefined,
@@ -74,73 +409,17 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
+  refSerialize: '9837a170adcbe1ce25bdfd1745653151'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '584129579516@s.whatsapp.net',
+    remoteJid: '584168325363@s.whatsapp.net',
     fromMe: false,
-    id: 'AC23A5AF523E27CB3BBB2BC625D958B2',
+    id: 'AC8F78FB4C2F1C482666F61A08416478',
     participant: undefined
   },
-  messageTimestamp: 1758050435,
-  pushName: 'Genesisdel',
-  broadcast: false,
-  message: Message {
-    conversation: '100002912650',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '100002912650',
-  name: 'Genesisdel',
-  from: '584129579516'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
-  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584129579516@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC4E3489608D4D062F65FB4E6FE03FC4',
-    participant: undefined
-  },
-  messageTimestamp: 1758050555,
-  pushName: 'Genesisdel',
+  messageTimestamp: 1758205599,
+  pushName: 'jesuseacostaf',
   broadcast: false,
   message: Message {
     conversation: 'Hola',
@@ -151,12 +430,12 @@
     }
   },
   body: 'Hola',
-  name: 'Genesisdel',
-  from: '584129579516'
+  name: 'jesuseacostaf',
+  from: '584168325363'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
+  ref: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  keyword: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
   answer: '__call_action__',
   options: {
     media: undefined,
@@ -169,165 +448,53 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584129579516@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC7F0634A07C8DEEBCF9F7011DD4E3E6',
-    participant: undefined
-  },
-  messageTimestamp: 1758050568,
-  pushName: 'Genesisdel',
-  broadcast: false,
-  message: Message {
-    conversation: 'Menu',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Menu',
-  name: 'Genesisdel',
-  from: '584129579516'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584129579516@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC97BC5548581311587B338A92777E05',
-    participant: undefined
-  },
-  messageTimestamp: 1758050581,
-  pushName: 'Genesisdel',
-  broadcast: false,
-  message: Message {
-    conversation: 'Menu',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Menu',
-  name: 'Genesisdel',
-  from: '584129579516'
+  refSerialize: 'fd07934617105193eda0687daebfd759'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_bfb5cb3c-d790-473c-b897-3c14dd89f4c0',
-  keyword: 'key_b04fff12-90ef-486a-b027-05e9c72a4396',
+  ref: 'ans_9efe4d99-815a-4154-8f06-d8fa11ccc1e8',
+  keyword: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  answer: '✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd3ae2e5bc212c0ee7ed167273bcecf56'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584168325363@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC622FA3C258FBEEAE7B874323E564CF',
+    participant: undefined
+  },
+  messageTimestamp: 1758205609,
+  pushName: 'jesuseacostaf',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'jesuseacostaf',
+  from: '584168325363'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b36c194b-49d5-4f68-9011-df101bfd6abc',
+  keyword: 'key_69d271f6-4312-4260-8741-3d981548b32e',
   answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
     'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
     'Escribe *Menu* para ver las opciones disponibles.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '54a512d32c044b115c7e22a59509faf1'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9866adb2-6e6e-4ffc-a42f-42a1cd6fbac1',
-  keyword: 'key_07ff3e56-dc58-4f76-bd17-fcfe4190d689',
-  answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c4241d40c44afec9527ead0b339e1eb3'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9866adb2-6e6e-4ffc-a42f-42a1cd6fbac1',
-  keyword: 'key_07ff3e56-dc58-4f76-bd17-fcfe4190d689',
-  answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c4241d40c44afec9527ead0b339e1eb3'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584142552008@s.whatsapp.net',
-    fromMe: false,
-    id: '3A7C035FCB5F8E3B26C5',
-    participant: undefined
-  },
-  messageTimestamp: 1758050616,
-  pushName: 'Jonathan Loaiza 🇻🇪',
-  broadcast: false,
-  message: Message {
-    conversation: 'Buenas',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Buenas',
-  name: 'Jonathan Loaiza 🇻🇪',
-  from: '584142552008'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
-  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
   options: {
     media: undefined,
     buttons: [],
@@ -339,166 +506,39 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
+  refSerialize: 'efa9fd62e3b568165087303806bb8aa4'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '584129579516@s.whatsapp.net',
     fromMe: false,
-    id: 'AC6DB4A35AFCB7BE3E20C8E8A9720E9A',
+    id: 'AC57F0F898A915154B1E0CF50CBCFFA4',
     participant: undefined
   },
-  messageTimestamp: 1758050698,
+  messageTimestamp: 1758205615,
   pushName: 'Genesisdel',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: '100003456789',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Hola',
+  body: '100003456789',
   name: 'Genesisdel',
   from: '584129579516'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_bfb5cb3c-d790-473c-b897-3c14dd89f4c0',
-  keyword: 'key_b04fff12-90ef-486a-b027-05e9c72a4396',
-  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
-    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
-    'Escribe *Menu* para ver las opciones disponibles.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '54a512d32c044b115c7e22a59509faf1'
-}
 [handleMsg]:  {
   key: {
-    remoteJid: '584222552008@s.whatsapp.net',
+    remoteJid: '584168325363@s.whatsapp.net',
     fromMe: false,
-    id: 'ACD498C05BBA3947CAF1DFF4A3345E93',
+    id: 'ACAD5F59318E77F1FDE84EC88B9CEC06',
     participant: undefined
   },
-  messageTimestamp: 1758050708,
-  pushName: 'Jonathan Loaiza',
-  broadcast: false,
-  messageStubType: 2,
-  messageStubParameters: [ 'Message absent from node' ],
-  body: undefined,
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584222552008@s.whatsapp.net',
-    fromMe: false,
-    id: 'ACD498C05BBA3947CAF1DFF4A3345E93',
-    participant: undefined
-  },
-  messageTimestamp: 1758050708,
-  pushName: 'Jonathan Loaiza',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Hola',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584222552008@s.whatsapp.net',
-    fromMe: false,
-    id: 'ACD498C05BBA3947CAF1DFF4A3345E93',
-    participant: undefined
-  },
-  messageTimestamp: 1758050710,
-  pushName: 'Jonathan Loaiza',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Hola',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_bfb5cb3c-d790-473c-b897-3c14dd89f4c0',
-  keyword: 'key_b04fff12-90ef-486a-b027-05e9c72a4396',
-  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
-    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
-    'Escribe *Menu* para ver las opciones disponibles.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '54a512d32c044b115c7e22a59509faf1'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_bfb5cb3c-d790-473c-b897-3c14dd89f4c0',
-  keyword: 'key_b04fff12-90ef-486a-b027-05e9c72a4396',
-  answer: '👋 ¡Bienvenido(a) a Administradora Serdeco C.A.!\n' +
-    'Estamos aquí para ayudarte con la gestión y pagos de tus servicios de Aseo Urbano y Relleno Sanitario.\n' +
-    'Escribe *Menu* para ver las opciones disponibles.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '54a512d32c044b115c7e22a59509faf1'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584222552008@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC39CC43A6601900D9DF5BA55C09C079',
-    participant: undefined
-  },
-  messageTimestamp: 1758050723,
-  pushName: 'Jonathan Loaiza',
+  messageTimestamp: 1758205615,
+  pushName: 'jesuseacostaf',
   broadcast: false,
   message: Message {
     conversation: 'Menu',
@@ -509,12 +549,12 @@
     }
   },
   body: 'Menu',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
+  name: 'jesuseacostaf',
+  from: '584168325363'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9866adb2-6e6e-4ffc-a42f-42a1cd6fbac1',
-  keyword: 'key_07ff3e56-dc58-4f76-bd17-fcfe4190d689',
+  ref: 'ans_ccf2b63b-6081-4dec-944c-fcd005bea01f',
+  keyword: 'key_aace13ee-2698-4d67-95e7-db2ca107762a',
   answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
   options: {
     media: undefined,
@@ -527,17 +567,51 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c4241d40c44afec9527ead0b339e1eb3'
+  refSerialize: '8315a4020794d232db9ba5d7d304c3f2'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  keyword: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fd07934617105193eda0687daebfd759'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9efe4d99-815a-4154-8f06-d8fa11ccc1e8',
+  keyword: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  answer: '✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd3ae2e5bc212c0ee7ed167273bcecf56'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '584222552008@s.whatsapp.net',
+    remoteJid: '584168325363@s.whatsapp.net',
     fromMe: false,
-    id: 'ACC1A96044C8DAB0B88FA5D3E1A3BD5F',
+    id: 'AC288A51ED293EE574B66B8A5CF723A4',
     participant: undefined
   },
-  messageTimestamp: 1758050731,
-  pushName: 'Jonathan Loaiza',
+  messageTimestamp: 1758205621,
+  pushName: 'jesuseacostaf',
   broadcast: false,
   message: Message {
     conversation: '2',
@@ -548,12 +622,12 @@
     }
   },
   body: '2',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
+  name: 'jesuseacostaf',
+  from: '584168325363'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_911f05fb-b533-42cd-98be-e673e7567745',
-  keyword: 'key_ef65341c-a452-4e1d-9612-c17989cf5557',
+  ref: 'ans_07290ec6-5bc8-4c06-b608-7c383e962d49',
+  keyword: 'key_bdce25c1-f340-4098-9b53-b2a5751d822c',
   answer: '🆔 Ingresa tu número de cédula:',
   options: {
     media: undefined,
@@ -566,50 +640,33 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '80b09bb19866c970e38806ee893d8fa9'
+  refSerialize: '7f3b44e24494ca7010e2025a5f55e060'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '584222552008@s.whatsapp.net',
+    remoteJid: '584129579516@s.whatsapp.net',
     fromMe: false,
-    id: 'AC21899E87562C83AE87C51E5F1ED094',
+    id: 'ACA420FAF41D2BFD1031A5D74EC2E88B',
     participant: undefined
   },
-  messageTimestamp: 1758050737,
-  pushName: 'Jonathan Loaiza',
+  messageTimestamp: 1758205662,
+  pushName: 'Genesisdel',
   broadcast: false,
   message: Message {
-    conversation: '3721909',
+    conversation: '1',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: '3721909',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
+  body: '1',
+  name: 'Genesisdel',
+  from: '584129579516'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_025985e4-8ba5-4a3e-9be8-96f82689c82a',
-  keyword: 'ans_911f05fb-b533-42cd-98be-e673e7567745',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '40e81d9209f91318be60815b92b0bc23'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
+  ref: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
+  keyword: 'key_a3c004b7-ed44-4101-ac6c-d957558e36f7',
   answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
   options: {
     media: undefined,
@@ -622,33 +679,33 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
+  refSerialize: '9837a170adcbe1ce25bdfd1745653151'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '584222552008@s.whatsapp.net',
+    remoteJid: '584129579516@s.whatsapp.net',
     fromMe: false,
-    id: 'ACF1871C96513AC07689FBCF9B7F5B94',
+    id: 'AC617DFA471A36DA25D5ABDED53945BC',
     participant: undefined
   },
-  messageTimestamp: 1758050757,
-  pushName: 'Jonathan Loaiza',
+  messageTimestamp: 1758205696,
+  pushName: 'Genesisdel',
   broadcast: false,
   message: Message {
-    conversation: '100001038464',
+    conversation: 'Menu',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: '100001038464',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
+  body: 'Menu',
+  name: 'Genesisdel',
+  from: '584129579516'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
+  ref: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  keyword: 'ans_8ac5cb49-5bfc-41c7-bc8c-1d9c307e49f6',
   answer: '__call_action__',
   options: {
     media: undefined,
@@ -661,51 +718,12 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
+  refSerialize: 'fd07934617105193eda0687daebfd759'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
-  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584222552008@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC9362358DD5B5B6D3D54320B6A0C370',
-    participant: undefined
-  },
-  messageTimestamp: 1758050800,
-  pushName: 'Jonathan Loaiza',
-  broadcast: false,
-  message: Message {
-    conversation: '100002578810',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '100002578810',
-  name: 'Jonathan Loaiza',
-  from: '584222552008'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f502152f-fe93-4b07-9cba-7ff2842b5897',
-  keyword: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  answer: '__call_action__',
+  ref: 'ans_9efe4d99-815a-4154-8f06-d8fa11ccc1e8',
+  keyword: 'ans_9ae53c57-20a2-4291-b307-f1a21e4d9f42',
+  answer: '✅ Gracias por usar nuestro servicio. Si necesitas ayuda de nuevo, escribe *Hola*.',
   options: {
     media: undefined,
     buttons: [],
@@ -717,16 +735,38 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'b4044b452f61374285cc8e9391ecd892'
+  refSerialize: 'd3ae2e5bc212c0ee7ed167273bcecf56'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584129579516@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC8F3D2140241C9E420464D67ADC7AAB',
+    participant: undefined
+  },
+  messageTimestamp: 1758205709,
+  pushName: 'Genesisdel',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menu',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Menu',
+  name: 'Genesisdel',
+  from: '584129579516'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119cd13e-c475-4734-a2d4-19baf591fef6',
-  keyword: 'key_72c0d1f6-e945-4b07-8318-2d85dcce4ce0',
-  answer: '🔢 Ingresa tu número de cuenta contrato de 12 dígitos:',
+  ref: 'ans_ccf2b63b-6081-4dec-944c-fcd005bea01f',
+  keyword: 'key_aace13ee-2698-4d67-95e7-db2ca107762a',
+  answer: '¿Qué deseas hacer?\n1️⃣ Ver Deuda\n2️⃣ Consultar mi Cuenta Contrato',
   options: {
     media: undefined,
     buttons: [],
-    capture: true,
+    capture: false,
     delay: 0,
     idle: undefined,
     ref: undefined,
@@ -734,5 +774,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b95613520be18a811078e00d5e7095c8'
+  refSerialize: '8315a4020794d232db9ba5d7d304c3f2'
 }
